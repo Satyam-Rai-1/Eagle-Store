@@ -45,7 +45,7 @@ const Trusted = () => {
 
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
+  background-color: ${({ theme }) => theme.colors.hbg};
 
   .brand-section {
     padding: 12rem 0 0 0;
