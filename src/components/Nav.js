@@ -27,7 +27,7 @@ const Nav = () => {
 
         &:hover,
         &:active {
-          color: ${({ theme }) => theme.colors.helper};
+          color: ${({ theme }) => theme.colors.white};
         }
       }
     }
@@ -205,7 +205,7 @@ const Nav = () => {
           </li>
         </ul>
 
-        {/* two button for open and close of menu */}
+        {/* two button for open and close the menu */}
         <div className="mobile-navbar-btn">
           <CgMenu
             name="menu-outline"
