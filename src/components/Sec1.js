@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components'
+import { Button } from './Button';
 
 const Sec1 = ({heading}) => {
     const {name} = heading;
@@ -12,9 +13,12 @@ const Sec1 = ({heading}) => {
                     <p className="intro-data">Welcome to</p>
                     <h1>{name}</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in at excepturi a eum doloremque voluptas quisquam quas atque accusantium nihil impedit laudantium, blanditiis, facere labore quos sed porro expedita commodi earum dolorem reprehenderit. Ad, dolores est voluptatem tempora eum assumenda a iste debitis voluptatum aliquam eius dicta accusantium omnis.</p>
+                    
+                    <Button>
                     <NavLink>
-                        <button>Shop Now</button>
+                        Shop Now
                     </NavLink>
+                    </Button>
                 </div>
                 <div className="sec1-image">
                     <figure>
