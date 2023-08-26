@@ -1,10 +1,10 @@
 import React from 'react'
 import Sec1 from './components/Sec1'
-import { useContext } from 'react';
-import {AppContext} from "./context/productcontext"
+
+import { useProductContext} from "./context/productcontext"
 
 const About = () => {
-  const myName = useContext(AppContext);
+  const { myName } = useProductContext();
   const data= {
     
     name:"About Us",

@@ -1,37 +1,32 @@
-import React from 'react'
-import { useProductContext } from '../context/productcontext'
-import { styled } from 'styled-components';
-import Product from './Product';
-
-
+import { useProductContext } from "../context/productcontext";
+import styled from "styled-components";
+import Product from "./Product";
 
 const FeatureProduct = () => {
-    const {isLoading, featureProducts} = useProductContext();
-    if(isLoading)
-    {
-        return <div>....Loading</div>
-    }
+  const { isLoading, featureProducts } = useProductContext();
+
+  if (isLoading) {
+    return <div> ......Loading </div>;
+  }
+
   return (
-    <Wrapper className='section'>
-        <div className="container">
-            <div className="intro-data">
-                Check Now!
-            </div>
-            <div className="common-heading">Our Featured Service</div>
-            <div className="grid grid-three-column">
-                {
-                    featureProducts.map ((curElem)=>{
-                        return<Product key = {curElem.id} {...curElem}/>;
-                    })
-                }
-            </div>
+    <Wrapper className="section">
+      <div className="container">
+        <div className="intro-data">Check Now!</div>
+        <div className="common-heading">Our Feature Services</div>
+        <div className="grid grid-three-column">
+          {featureProducts.map((curElem) => {
+            return <Product key={curElem.id} {...curElem} />;
+          })}
         </div>
+      </div>
     </Wrapper>
-  )
-}
+  );
+};
+
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.hbg};
+  background-color: ${({ theme }) => theme.colors.bg};
 
   .container {
     max-width: 120rem;
@@ -129,4 +124,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default FeatureProduct
+export default FeatureProduct;
