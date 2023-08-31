@@ -23,6 +23,7 @@ const Sec1 = ({heading}) => {
                 <div className="sec1-image">
                     <figure>
                         <img src="myimages/shopping-family.jpg" alt="family" />
+                        
                     </figure>
                 </div>
             </div>
@@ -35,6 +36,7 @@ const Sec1 = ({heading}) => {
 
 const Wrapper = styled.section`
   padding: 12rem 0;
+  
 
   img {
     min-width: 30rem;
